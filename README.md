@@ -3,6 +3,8 @@
 WebdriverRTC [![Build Status](https://travis-ci.org/webdriverio/webdriverrtc.svg?branch=master)](https://travis-ci.org/webdriverio/webdriverrtc) [![Gitter](https://badges.gitter.im/webdriverio/webdriverio.svg)](https://gitter.im/webdriverio/webdriverio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![devDependencies Status](https://david-dm.org/webdriverio/webdriverrtc/dev-status.svg)](https://david-dm.org/webdriverio/webdriverrtc?type=dev)
 ============
 
+__NOTE:__ This project is deprecated and is not supported for WebdriverIO v5 and upwards. If you have interest in such capabilities please raise an issue in the [WebdriverIO project](https://github.com/webdriverio/webdriverio) and help us to bring this project back into shape.
+
 This project is an extension to [WebdriverIO](http://webdriver.io) and enables your client instance to grep statistical data from a running WebRTC peer connection. According to the [w3 WebRTC draft](http://www.w3.org/TR/webrtc/#dom-peerconnection-getstats) all `RTCPeerConnection` objects provide a method called [`getStats`](http://www.w3.org/TR/webrtc/#widl-RTCPeerConnection-getStats-void-MediaStreamTrack-selector-RTCStatsCallback-successCallback-RTCPeerConnectionErrorCallback-failureCallback) which returns a [`RTCStats`](http://www.w3.org/TR/webrtc/#idl-def-RTCStats) object with useful information about things like packet losts or the audio input level which can be helpful in order to test your network connection or environment (e.g. did my "Mute" button really work?).
 
 This means that you can access all statistical data from `chrome://webrtc-internals` using Selenium as part of your integration tests.
